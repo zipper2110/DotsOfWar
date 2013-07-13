@@ -5,13 +5,14 @@ import java.util.logging.Logger;
 /**
  * User: Captain Jack
  * Date: 12.07.13 20:43
+ * GameManager is base platform for running game, it is game independent and allows to run different games
  */
 public class GameManager {
 
-    Game game;
+    private Game game;
 
     public GameManager() {
-        game = new Game();
+        game = new DotsGame();
     }
 
     Logger logger = Logger.getLogger(GameManager.class.getName());
@@ -24,5 +25,13 @@ public class GameManager {
     public void stopGame() {
         game.stop();
         logger.info("GameManager stopped");
+    }
+
+    public void pauseGame() {
+
+    }
+
+    public void unpauseGame() {
+
     }
 }
