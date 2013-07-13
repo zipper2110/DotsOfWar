@@ -9,5 +9,4 @@ public interface Game {
     void stop();
     void pause();
     void resume();
-
 }

@@ -8,10 +8,10 @@ import javax.swing.*;
  */
 public class GameField {
 
-    private JFrame form;
+    private DotsFrame form;
 
     public GameField(DotsGame.GameWindowListener gameWindowListener) {
-        form = new JFrame();
+        form = new DotsFrame();
         form.addWindowListener(gameWindowListener);
     }
 
