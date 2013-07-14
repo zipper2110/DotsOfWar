@@ -11,16 +11,16 @@ import java.util.logging.Logger;
 public class DotsGame implements Game {
 
     private Logger logger = Logger.getLogger(this.getClass().getName());
-    private GameField gameField;
+    private GameFrame gameFrame;
 
     public DotsGame() {
-        this.gameField = new GameField(new GameWindowListener());
+        this.gameFrame = new GameFrame(new GameWindowListener());
         logger.info("Created new game");
     }
 
     @Override
     public void start() {
-        this.gameField.show();
+        this.gameFrame.show();
         logger.info("Game started");
     }
 
