@@ -5,8 +5,10 @@ import java.awt.event.WindowEvent;
 import java.util.logging.Logger;
 
 /**
- * User: Captain Jack
- * Date: 13.07.13 0:33
+ * the most outer game class, represents the game itself
+ *
+ * @author Captain Jack
+ * @since 13.07.13 0:33
  */
 public class DotsGame implements Game {
 

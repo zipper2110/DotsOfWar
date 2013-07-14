@@ -5,8 +5,10 @@ import javax.swing.border.LineBorder;
 import java.awt.*;
 
 /**
- * User: Captain Jack
- * Date: 13.07.13 14:08
+ * represents game GUI, creates game window
+ *
+ * @author Captain Jack
+ * @since 13.07.13 14:08
  */
 public class GameFrame {
 
