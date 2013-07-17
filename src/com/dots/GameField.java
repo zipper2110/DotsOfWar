@@ -13,6 +13,8 @@ import java.util.List;
 
 class GameField extends JPanel {
 
+    private FieldMatrix fieldMatrix;
+
     private int cellsX;
     private int cellsY;
     private int gridStep;
@@ -23,6 +25,8 @@ class GameField extends JPanel {
         this.cellsY = cellsY;
         this.gridStep = gridStep;
         if (this.gridStep <= 0) this.gridStep = 10;
+        this.fieldMatrix = new FieldMatrix(cellsX, cellsY);
+
         setPreferredSize(new Dimension(cellsX * (gridStep), cellsY * (gridStep)));
         setBackground(new Color(255, 255, 230));
         this.setBorder(new LineBorder(Color.RED));
@@ -67,24 +71,6 @@ class GameField extends JPanel {
 
         public Cell getCell() {
             return this.cell;
-        }
-    }
-
-    public class Cell {
-        private int x;
-        private int y;
-
-        public Cell(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        public int getX() {
-            return this.x;
-        }
-
-        public int getY() {
-            return this.y;
         }
     }
 }
